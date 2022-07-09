@@ -1,10 +1,12 @@
 import React from "react";
-import { AppUI } from "./AppUI";
+import {AppUI} from "./AppUI";
 
 function App(){
-    return [
-        <AppUI/>
-    ];
+    return (
+        <React.Fragment>
+            <AppUI/>
+        </React.Fragment>
+    );
 }
 
 export default App;

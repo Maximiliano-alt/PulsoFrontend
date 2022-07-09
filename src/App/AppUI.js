@@ -1,11 +1,11 @@
 import React from "react";
-
+import {PulsoNav} from "../PulsoNav/index"
 function AppUI(){
-    return(
+    return (
         <React.Fragment>
-            
+           <PulsoNav/> 
         </React.Fragment>
-    )
+    );
 }
 
-export {AppUI};
+export { AppUI };
