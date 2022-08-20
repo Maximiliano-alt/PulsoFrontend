@@ -1,11 +1,11 @@
 import React from "react";
 import {AppUI} from "./AppUI";
-
+import {PulsoProvider} from "../PulsoContext"
 function App(){
     return (
-        <React.Fragment>
+        <PulsoProvider>
             <AppUI/>
-        </React.Fragment>
+        </PulsoProvider>
     );
 }
 

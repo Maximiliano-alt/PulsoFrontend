@@ -1,16 +1,22 @@
 import React from "react";
 
 const PulsoContext = React.createContext();
+function PulsoProvider(props){
+    const [openModal, setOpenModal] = React.useState(false)
 
-function PulsoContext(props){
     const [openMenu, setOpenMenu] =  React.useState(false)
 
     return(
-        <PulsoContext.Provider 
-            value={{
+        <PulsoContext.Provider value={{
                 openMenu,
-                setOpenMenu
+                setOpenMenu,
+                openModal,
+                setOpenModal
             }}
-        ></PulsoContext.Provider>
-    );
+        >
+            {props.children}
+        </PulsoContext.Provider>
+    )
 }
+<PulsoContext.Consumer></PulsoContext.Consumer>
+export {PulsoContext, PulsoProvider }
