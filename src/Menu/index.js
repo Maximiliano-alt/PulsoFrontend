@@ -2,7 +2,9 @@ import React from "react";
 import './Menu.scss'
 function Menu(){
     return(
+        
         <div className="menu-modal">
+            <div className="head-modal"></div>
             <ul>
                 <a>
                 <h1>Acerca de nosotros</h1>
