@@ -5,3 +5,8 @@ button{
 .hamburger-react{
     color: #FFFF;
 }
+@media (min-width: 1024px) {
+    .hamburger-react{
+        display: none;
+    }
+}

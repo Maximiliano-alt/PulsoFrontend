@@ -4,6 +4,7 @@ import { Menu } from "../Menu";
 import { Modal } from "../Modal";
 import { PulsoContext } from "../PulsoContext";
 import {PulsoNav} from "../PulsoNav/index"
+import { VideoCarousel } from "../VideoCarousel/VideoCarousel";
 import './AppUI.scss'
 function AppUI(){
     const {
@@ -20,8 +21,8 @@ function AppUI(){
                     <Menu></Menu>
                 </Modal>
             )}
-            
-            <Carousel classname='carousel-first'/>
+            {/* <Carousel classname='carousel-first'/> */}
+            <VideoCarousel classname='carousel-second' />
         </React.Fragment>
     );
 }
