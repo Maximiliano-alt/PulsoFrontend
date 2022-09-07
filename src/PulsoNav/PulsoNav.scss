@@ -14,8 +14,81 @@
     z-index: 10;
 
     img{
-        width:40%;
+        width:50%;
         height: 40%;
         margin-left: 15px;
+    }
+    ul {
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        justify-content: space-between;
+        
+      }
+      
+      li {
+        float: left;
+        
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 13pt;
+        
+        
+      }
+      a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+      @media (min-width: 768px) {
+        img{
+            width:30%;
+            height: 30%;
+            
+        }
+      }
+    @media (min-width: 1024px) {
+        img{
+            width:20%;
+            height: 20%;
+            
+        }
+        ul{
+            display: contents;
+        }
+        .hamburguer-logo{
+            display: none;
+        }
+    }
+    @media (min-width: 1440px) {
+        img{
+            width:30%;
+            height: 30%;
+            
+        }
     }
 }
