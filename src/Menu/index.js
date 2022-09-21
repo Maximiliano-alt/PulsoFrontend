@@ -6,17 +6,17 @@ function Menu(){
         <div className="menu-modal">
             <div className="head-modal"></div>
             <ul>
-                <a>
+                <a href="#container-about">
                 <h1>Acerca de nosotros</h1>
                 __________________________________________________
                 </a>
 
-                <a>
+                <a href="#services">
                 <h1>Servicios</h1>
                 __________________________________________________
                 </a>
                 
-                <a>
+                <a href="#carousel-works">
                 <h1>Trabajos realizados</h1>
                 __________________________________________________
                 </a>

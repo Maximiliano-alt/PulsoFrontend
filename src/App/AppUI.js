@@ -5,7 +5,9 @@ import { Modal } from "../Modal";
 import { PulsoContext } from "../PulsoContext";
 import {PulsoNav} from "../PulsoNav/index"
 import { VideoCarousel } from "../VideoCarousel/VideoCarousel";
+import { About } from "../About";
 import './AppUI.scss'
+import { PulsoServices } from "../PulsoServices";
 function AppUI(){
     const {
         openModal,
@@ -13,7 +15,7 @@ function AppUI(){
     } = React.useContext(PulsoContext)
     
     return (
-        <React.Fragment>
+        <React.Fragment classname='grid'>
            <PulsoNav openModal={openModal} setOpenModal={setOpenModal}/>  
            
             {openModal && (
@@ -21,8 +23,11 @@ function AppUI(){
                     <Menu></Menu>
                 </Modal>
             )}
-            {/* <Carousel classname='carousel-first'/> */}
+            
             <VideoCarousel classname='carousel-second' />
+            <About classname='about-thirdth'/>
+            <PulsoServices classname='services-four'/>
+            <Carousel/>
         </React.Fragment>
     );
 }
