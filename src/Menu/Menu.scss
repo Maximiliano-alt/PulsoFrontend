@@ -1,20 +1,24 @@
-.head-modal{
-   
-    background-color: #000;
 
-}
 .menu-modal{
     height: 100%;
-    width: 101%;
+    width: 100%;
     background-color: #000;
     text-align: center;
-    
-    transform: translate(0px, 100%);
+    margin-top: 230%;
     ul{
-        margin-top: -143%;
+        hr{
+            width: 80%;
+        border: none;
+        height: 1px;
+        margin-bottom: 5%;
+    /* Set the hr color */
+        color: white; /* old IE */
+        background-color: white; /* Modern Browsers */
+        }
+        margin-top: -190%;
         text-align: center;
         padding: 0;
-        transform: translate(0px, 110%);
+        background-color: #000;
     }
     h1{
         color: #FFFFFF;

@@ -1,14 +1,23 @@
+#works{
+    width: 100px;
+    height: 100px;
+}
 .carousel-works{
     color: #fff;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 8pt;
-    transform: translateY(40%);
-    
+    padding: 5%;
     .header-carousel{
         .header{
             hr{
                 width: 80%;
+                margin-bottom: 5%;
+        border: none;
+        height: 1px;
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
             }
         }
     }
@@ -20,10 +29,16 @@
             display: none;
         }
         .swiper {
-            display: block;
+            
             width: 100%;
             height: 100%;
           }
+          .swiper-button-next{
+            color: #fff;
+        }
+        .swiper-button-prev{
+            color: #fff;
+        }
         video{
             width: 100%;
         } 
@@ -74,7 +89,6 @@
 }
 @media(max-height: 500px){
     .carousel-works{
-        transform: translateY(50%);
     }
     
 }

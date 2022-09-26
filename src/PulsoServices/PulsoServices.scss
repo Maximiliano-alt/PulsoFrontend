@@ -1,24 +1,38 @@
+#services{
+    width: 100px;
+    height: 100px;
+}
 .services{
-    transform: translateY(150%);
     color: #fff;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 8pt;
+    padding: 5%;
     
     .header{
         hr{
             width: 80%;
+        border: none;
+        height: 1px;
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
         }
     }
     .swiper{
         display: none;
     }
-    
+    .swiper-button-next{
+        color: #fff;
+    }
+    .swiper-button-prev{
+        color: #fff;
+    }
     .cards-services{
         grid-column: 2 / span 12;
         display: grid;
         grid-template-columns: repeat(12, minmax(auto, 60px));
-        grid-gap: 15px;
+        
         justify-content: center;
     }
     .card {
@@ -29,8 +43,8 @@
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
-    .card:hover {
-        transform: translateY(-7px);
+    .card-content h1{
+        font-size: 15pt;
     }
     .image-container {
         width: 100%;
@@ -45,9 +59,7 @@
     .image-container img {
         width: 100%;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        bottom: 0%;
         flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
@@ -70,7 +82,7 @@
           }
           .swiper-slide {
             text-align: center;
-            font-size: 18px;
+            font-size: 18pt;
             background: rgba(255,255,255,0.9);
           
             /* Center slide text vertically */
@@ -118,48 +130,39 @@
 
 @media(min-width: 400px) {
     .services{
-        transform: translateY(130%);
     }
 }
 @media(min-width: 600px) {
     .services{
-        transform: translateY(120%);
     }
 }
 @media(min-width: 700px) {
     .services{
-        transform: translateY(100%);
     }
 }
 
 @media(max-height: 1400px) {
     .services{
-        transform: translateY(130%);
     }
 }
 
 @media(max-height: 400px) {
     .services{
-        transform: translateY(145%);
     }
 }
 @media(max-height: 500px) {
     .services{
-        transform: translateY(150%);
     }
 }
 @media(min-width: 1024px)  {
     .services{
-        transform: translateY(215%);
     }
 }
 @media (min-width:1024px) and(min-height:1080px) {
     .services{
-        transform:  translateY(320%);
     }
 }
 @media (min-width:1920px) and(min-height:1080px) {
     .services{
-        transform:  translateY(320%);
     }
 }

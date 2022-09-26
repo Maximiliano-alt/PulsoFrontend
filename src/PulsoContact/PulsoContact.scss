@@ -1,0 +1,132 @@
+#contact{
+    width: 100px;
+    height: 100px;
+}
+.container-contact{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8pt;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    
+    hr{
+        width: 80%;
+        border: none;
+        height: 1px;
+        margin-bottom: 5%;
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
+    }
+    #container-img {
+        display: flex;
+align-items: center;
+justify-content: center;
+        .img-background{
+            width: 100%;
+            opacity: 0.2;
+            height: 400px;
+            z-index: -1;
+        }
+        .img-phone{
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(81deg) brightness(102%) contrast(105%);
+            opacity: 1;
+            width: 80%;
+            padding: 11%;
+        }
+        
+    }
+    .col-lg-3{
+        justify-content: center;
+        align-items: center;
+        min-width: 230px;
+        float: left;
+        position: relative;
+        min-height: 1px;
+
+        text-align: center;
+    }
+    
+    .img-container {
+        display: flex;
+        
+        justify-content: center;
+        position: relative;
+ 
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .positioning{
+        height: 53px;
+            width: 53px;
+            background-color: #2D2D2D;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            
+            padding: 4px;
+            font-size: 18pt;
+            line-height: 35px;
+            margin-top: 10%;
+    }
+    .positioning p{
+        width: 300px;
+        text-align: center;
+        margin-left: -240%;
+    }
+    .positioning .social-media{
+        img{
+            cursor: pointer;
+            z-index: 1;
+        }
+        display: flex;
+        flex-direction: row; 
+        width: 400%; 
+        margin-left: -150%;      
+    }
+    .positioning .social{
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(81deg) brightness(102%) contrast(105%);
+        opacity: 1;
+    }
+    .container-bottom{
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+        
+        img{
+            width: 15%;
+            padding: 5%;
+        }
+        h1{
+            font-size: 12pt;
+            margin-left: 40px;
+        }
+        width: 100%;
+        height: 57px;
+        margin-top: 50%;
+        background-color: #2D2D2D;
+    }
+}
+
+@media (min-width:768px){
+    #container-img{
+        width: 100%;
+    }
+    .img-container{
+        width: 100%;
+    }
+     
+        
+    .container-contact .positioning{
+            margin-top: 3%;
+        }
+        .container-contact .container-bottom{
+            margin-top: 0;
+        }
+        .container-contact .container-bottom h1{
+            margin-left: 18%;
+        }
+
+    
+}

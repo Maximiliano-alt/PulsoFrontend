@@ -17,7 +17,8 @@ import "swiper/css/navigation";
 
 const PulsoServices = () => {
   return (
-    <div className='services' id='services'> 
+    <div className='services' > 
+            <div id='services'></div>
             <div className='header'>
                 <h1>Servicios</h1>
                 <hr  color="white" />

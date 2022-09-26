@@ -22,6 +22,7 @@ const VideoCarousel = () => {
   
   return (
     <div className='swiper-container'> 
+        <div id='Home'></div>
     <Swiper
         spaceBetween={30}
         centeredSlides={true}

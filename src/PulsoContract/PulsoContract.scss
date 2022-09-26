@@ -1,0 +1,117 @@
+
+#contract{
+    width: 100px;
+    height: 100px;
+}
+.container-contract{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8pt;
+    color: white;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    hr{
+        width: 80%;
+        border: none;
+        height: 1px;
+        
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
+    }
+    h2{
+        font-weight: 14pt;
+    }
+    
+      
+    form input{
+        width: 80%;
+        padding: 1.5%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        backdrop-filter: blur(1px);
+        border: 0;
+        color: #FFFFFF;
+        background-color: #2D2D2D;
+        
+      }
+      form select{
+        width: 83%;
+        padding: 1.5%;
+        color: #FFFFFF;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        backdrop-filter: blur(1px);
+        border: 0;
+        background-color: #2D2D2D;
+        
+      
+      }
+      option{
+        color: black;
+      }
+      
+      form textarea{
+        width: 80%;
+        height: 100px;
+        padding: 1.5%;
+        color: #FFFFFF;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        backdrop-filter: blur(1px);
+        border: 0;
+        background-color: #2D2D2D;
+        
+      
+      }
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #FFFFFF;
+        opacity: 1; /* Firefox */
+      }
+      form button{
+        background-color: #2D2D2D ;
+        color: #FFFFFF;
+        
+        padding: 8px;
+        font-family: 'Quicksand', sans-serif;
+        width: 83%;
+        cursor: pointer;
+      }
+      
+      option{
+        color: #FFFFFF;
+      }
+    }
+
+      
+
+
+
+
+@media(min-width: 1024px){
+    hr{
+        display: none;
+    }
+    h2{
+        display: none;
+    }
+    .form-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 5%;
+      }
+    form .separate1{
+        margin-left: 10%;
+        
+    }
+    form .separate2{
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      width: 90%;
+      position: inherit;
+    }
+    .container-contract form textarea{
+        height: 230px;
+    }
+}

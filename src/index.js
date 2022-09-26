@@ -15,7 +15,7 @@ import App from './App';
 ReactDOM.render(//aqui se ponen los componentes que se quieren renderizar
   
     // <App saludo="buenass" >
-    <App />,
+    <App class="app"/>,
   document.getElementById('root')
 );
 

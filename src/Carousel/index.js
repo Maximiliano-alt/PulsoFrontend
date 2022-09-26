@@ -20,7 +20,8 @@ import caligrafix from '../assets/videos/CALIGRAFIX.mp4'
 
 const Carousel = () => {
   return (
-    <div className='carousel-works' id='carousel-works'>
+    <div className='carousel-works' >
+      <div id='works'></div>
       <div className='header-carousel'>
             <div className='header'>
                 <h1>Trabajos realizados</h1>
