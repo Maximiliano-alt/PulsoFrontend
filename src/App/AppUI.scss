@@ -1,11 +1,14 @@
 $openModal: false;
 $size: 100px;
-
-.modal-second {
+.grid{
+  display: flex;
+  flex-direction: column;
   
+}
 
-  //@if $openModal {
-    z-index: 1;
-    
- // }
+.menu{
+  position: absolute;
+}
+.services-four{
+  z-index: 1;
 }

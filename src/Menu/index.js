@@ -3,33 +3,33 @@ import './Menu.scss'
 function Menu(){
     return(
         
-        <div className="menu-modal">
-            <div className="head-modal"></div>
+        <div className="menu-modal" id="">
+            <div className="head-modal" id="Home"></div>
             <ul>
-                <a>
+                <a href="#about">
                 <h1>Acerca de nosotros</h1>
-                __________________________________________________
+                <hr/>
                 </a>
 
-                <a>
+                <a href="#services">
                 <h1>Servicios</h1>
-                __________________________________________________
+                <hr/>
                 </a>
                 
-                <a>
+                <a href="#works">
                 <h1>Trabajos realizados</h1>
-                __________________________________________________
+                <hr/>
                 </a>
 
-                <a>
-                <h1>Contratar</h1>
-                __________________________________________________
+                <a href="#contract">
+                <h1>Contacto</h1>
+                <hr/>
                 </a>
                 
-                <a>
+                {/* <a href="#contact">
                 <h1>Contacto</h1>
-                __________________________________________________
-                </a>
+                <hr/>
+                </a> */}
                 
             </ul>
         </div>

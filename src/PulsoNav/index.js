@@ -7,14 +7,15 @@ function PulsoNav({setOpenModal, openModal}) {
 
     return (
         <div className="nav-bar">
-           <img src={LogoPulso} alt='logo'/>
+        <a href='#Home'><img src={LogoPulso} alt='logo' href='/'/></a> 
+           
            <div className='nav-bar-desktop'>
            <ul>
-                <li><a class="active" href="#home">Acerca de nosotros</a></li>
-                <li><a href="#news">Servicios</a></li>
-                <li><a href="#contact">Trabajos realizados</a></li>
-                <li><a href="#about">Contratar</a></li>
-                <li><a href="#about">Contacto</a></li>
+                <li><a href="#about">Acerca de nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#works">Trabajos realizados</a></li>
+                <li><a href="#contract">Contacto</a></li>
+                {/* <li><a href="#contact">Contacto</a></li> */}
             </ul>
            </div>
             <OpenPulsoModal className="hamburguer-logo" setOpenModal={setOpenModal} openModal={openModal}/>            

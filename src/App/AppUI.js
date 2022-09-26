@@ -5,7 +5,11 @@ import { Modal } from "../Modal";
 import { PulsoContext } from "../PulsoContext";
 import {PulsoNav} from "../PulsoNav/index"
 import { VideoCarousel } from "../VideoCarousel/VideoCarousel";
+import { About } from "../About";
 import './AppUI.scss'
+import { PulsoServices } from "../PulsoServices";
+import {PulsoContract} from "../PulsoContract"
+import {PulsoContact} from "../PulsoContact"
 function AppUI(){
     const {
         openModal,
@@ -13,16 +17,21 @@ function AppUI(){
     } = React.useContext(PulsoContext)
     
     return (
-        <React.Fragment>
-           <PulsoNav openModal={openModal} setOpenModal={setOpenModal}/>  
+        <React.Fragment classname='grid' id="grid" class="grid">
+           <PulsoNav  openModal={openModal} setOpenModal={setOpenModal}/>  
            
             {openModal && (
-                <Modal classname='modal-second'>
-                    <Menu></Menu>
-                </Modal>
+                
+                    <Menu classname='menu'></Menu>
+                
             )}
-            {/* <Carousel classname='carousel-first'/> */}
+            
             <VideoCarousel classname='carousel-second' />
+            <About classname='about-thirdth' id='about-thirdth'/>
+            <PulsoServices classname='services-four'/>
+            <Carousel/>
+            <PulsoContract/>
+            {/* <PulsoContact/> */}
         </React.Fragment>
     );
 }

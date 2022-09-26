@@ -1,0 +1,168 @@
+#services{
+    width: 100px;
+    height: 100px;
+}
+.services{
+    color: #fff;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8pt;
+    padding: 5%;
+    
+    .header{
+        hr{
+            width: 80%;
+        border: none;
+        height: 1px;
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
+        }
+    }
+    .swiper{
+        display: none;
+    }
+    .swiper-button-next{
+        color: #fff;
+    }
+    .swiper-button-prev{
+        color: #fff;
+    }
+    .cards-services{
+        grid-column: 2 / span 12;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(auto, 60px));
+        
+        justify-content: center;
+    }
+    .card {
+        grid-column-end: span 4;
+        display: flex;
+        padding: 15px;
+        
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .card-content h1{
+        font-size: 15pt;
+    }
+    .image-container {
+        width: 100%;
+        padding-top: 56.25%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden
+    }
+    .image-container img {
+        width: 100%;
+        position: absolute;
+        bottom: 0%;
+        flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+    }
+    .card-content {
+        z-index: 1;
+        color: black;
+        background-color: rgba(255,255,255,0.9);
+        width: 100%;
+      }
+      
+      @media only screen and (min-width: 1024px){
+        .cards-services{
+            display: none;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+          .swiper-slide {
+            text-align: center;
+            font-size: 18pt;
+            background: rgba(255,255,255,0.9);
+          
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+          
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        .header{
+            hr{
+                display: none;
+            }
+        }
+        
+      }
+    @media only screen and (max-width: 1024px) {
+        
+        .cards {
+          grid-column: 2 / span 6;
+          grid-template-columns: repeat(6, 1fr);
+          grid-gap: 20px;
+        }
+        .card {
+          grid-column-end: span 6;
+        }
+    }
+    
+
+}
+
+@media(min-width: 400px) {
+    .services{
+    }
+}
+@media(min-width: 600px) {
+    .services{
+    }
+}
+@media(min-width: 700px) {
+    .services{
+    }
+}
+
+@media(max-height: 1400px) {
+    .services{
+    }
+}
+
+@media(max-height: 400px) {
+    .services{
+    }
+}
+@media(max-height: 500px) {
+    .services{
+    }
+}
+@media(min-width: 1024px)  {
+    .services{
+    }
+}
+@media (min-width:1024px) and(min-height:1080px) {
+    .services{
+    }
+}
+@media (min-width:1920px) and(min-height:1080px) {
+    .services{
+    }
+}

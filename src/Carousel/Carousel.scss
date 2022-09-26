@@ -1,91 +1,96 @@
-$breakpoints: (
-    'sm': 630px,
-    'md': 768px,
-    'lg': 1024px,
-);
-
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
+#works{
+    width: 100px;
+    height: 100px;
+}
+.carousel-works{
+    color: #fff;
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    width: 100%;
-    background-color: white;
-    overflow: hidden;
-    
-    &.swiper-slide-active,
-    &.swiper-slide-duplicate-active {
-        .slide-image {
-            transform: scale3d(1, 1, 1);
-        }
-    }
-    
-    @media (min-width: map-get($breakpoints, 'sm')) {
-        width: 50%;
-    }
-
-    @media (min-width: map-get($breakpoints, 'md')) {
-        width: 33.333333%;
-        
-        &.swiper-slide-next,
-        &.swiper-slide-prev,
-        &.swiper-slide-duplicate-next,
-        &.swiper-slide-duplicate-prev {
-            .slide-image {
-                transform: scale3d(1, 1, 1);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8pt;
+    padding: 5%;
+    .header-carousel{
+        .header{
+            hr{
+                width: 80%;
+                margin-bottom: 5%;
+        border: none;
+        height: 1px;
+    /* Set the hr color */
+        color: #333; /* old IE */
+        background-color: #333; /* Modern Browsers */
             }
         }
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .myswiper{
-    transition: all 400ms ease 0s;
-  }
-  .swiper-wrapper {
-    // enough width to have off screen slides partially visible     
-    width: 73.8%;
-    will-change: transform;
+    }
+    @media(min-width: 1024px){
+        hr{
+            display: none;
+        }
+        .cards-videos{
+            display: none;
+        }
+        .swiper {
+            
+            width: 100%;
+            height: 100%;
+          }
+          .swiper-button-next{
+            color: #fff;
+        }
+        .swiper-button-prev{
+            color: #fff;
+        }
+        video{
+            width: 100%;
+        } 
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+          
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+          
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    } 
     
-    @media (min-width: map-get($breakpoints, 'sm')) {
-        width: 100%;
-    }
-    @media (min-width: map-get($breakpoints, 'lg')) {
-        width: 25%;
-    }
-}
-  }
 
-  .slide-image {
-    
-    width: 350%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: scale3d(1.3, 1.3, 1); // 3d to hardware accelerate
-    backface-visibility: hidden;
-    will-change: transform;
-    transition: transform 1400ms ease;
 }
+
+@media(max-width: 1024px){
+    .carousel-works{
+        
+    }
+    .mySwiper2{
+        display: none;
+    }
+    #myswiper2{
+        display: none;
+    }
+    .cards-videos{
+        display: contents;
+    }
+}
+@media(max-height: 500px){
+    .carousel-works{
+    }
+    
+}
+
+  
