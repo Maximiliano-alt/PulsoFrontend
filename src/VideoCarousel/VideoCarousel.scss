@@ -17,11 +17,21 @@ body {
 .swiper-button-prev{
   color: #fff;
 }
+.swiper-slide-active{
+  justify-content: left;
+}
+.swiper-slide-active{
+  justify-content: left;
+}
 .swiper-slide {
+  .swiper-slide-active{
+    justify-content: left;
+  }
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  justify-content: left;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,13 +47,26 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.container-branch{
+  #caligrafix-logo{
+    width: 60%;
+  }
+  position: absolute;
+    padding: 4%;
+    padding-top: -30%;
+    width: 32%;
+    right: 60%;
+    text-align: left;
+    justify-content: left;
+  
 }
-
+.container-branch img{
+  width: 30%;
+}
+.content{
+  justify-content: left;
+  text-align: left;
+}
 // .swiper-container{
 //   position: relative;
 //   width: 100%;
@@ -64,6 +87,24 @@ video{
 .swiper-container .mySwiper{
   width: 100%; height: 100%; position: absolute;
 }
+
+
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   background-color: #fff;
+}
+
+@media(max-width: 800px){
+  .swiper-container .mySwiper{
+     height: 50%;
+  }
+  .container-branch{
+    padding: 0;
+    left: 15%;
+    img{
+      width: 50%;
+    }
+    #caligrafix-logo {
+      width: 100%;
+  }
+  }
 }
