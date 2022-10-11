@@ -4,7 +4,7 @@ import './Carousel.scss'
 import 'swiper/css';
 import "swiper/css";
 import "swiper/css/scrollbar";
-
+import { VideoCarousel } from "../VideoCarousel/VideoCarousel";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Scrollbar } from "swiper";
@@ -24,11 +24,12 @@ const Carousel = () => {
       <div id='works'></div>
       <div className='header-carousel'>
             <div className='header'>
-                <h1>Trabajos realizados</h1>
-                <hr  color="white" />
+                <h1>TRABAJOS REALIZADOS</h1>
+                
             </div>
       </div>
-      <Swiper
+      <VideoCarousel classname='carousel-second' />
+      {/* <Swiper
     slidesPerView={3}
     spaceBetween={30}
     slidesPerGroup={3}
@@ -157,7 +158,7 @@ const Carousel = () => {
             </video>
             <h1>Trabajo Nº8</h1>
         </div>
-      </section>
+      </section> */}
     </div>
     
   )

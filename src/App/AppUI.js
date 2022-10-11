@@ -9,7 +9,8 @@ import { About } from "../About";
 import './AppUI.scss'
 import { PulsoServices } from "../PulsoServices";
 import {PulsoContract} from "../PulsoContract"
-import {PulsoContact} from "../PulsoContact"
+import {PulsoHome} from "../PulsoHome"
+
 function AppUI(){
     const {
         openModal,
@@ -26,7 +27,8 @@ function AppUI(){
                 
             )}
             
-            <VideoCarousel classname='carousel-second' />
+            {/* <VideoCarousel classname='carousel-second' /> */}
+            <PulsoHome />
             <About classname='about-thirdth' id='about-thirdth'/>
             <PulsoServices classname='services-four'/>
             <Carousel/>

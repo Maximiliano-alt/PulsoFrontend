@@ -1,13 +1,13 @@
 import React from 'react';
 import './PulsoNav.scss'
-import Logo from "../assets/pulsoFake.png"
+
 import { OpenPulsoModal } from '../OpenPulsoModal';
-import LogoPulso from '../Icons/Logopulso.svg';
+import casa from '../assets/casa.png';
 function PulsoNav({setOpenModal, openModal}) {
 
     return (
         <div className="nav-bar">
-        <a href='#Home'><img src={LogoPulso} alt='logo' href='/'/></a> 
+        <a href='#Home'><img src={casa} alt='logo' href='/'/></a> 
            
            <div className='nav-bar-desktop'>
            <ul>

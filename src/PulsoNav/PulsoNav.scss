@@ -13,13 +13,13 @@
     right: 0;
     z-index: 10;
   .nav-bar-desktop{
-    width: 100%;
+    
     margin-left: 10%;
   }
      img{
-        width:100%;
-        height: 40%;
-        margin-left: 15px;
+      width: 39px;
+      height: 39px;
+     
     }
     ul {
         display: none;
@@ -44,10 +44,11 @@
         color: #fff;
         text-decoration: none;
         display: inline-block;
-        padding: 15px 20px;
+        margin: 0px 20px;
         position: relative;
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 13pt;
+        margin-right: 50px;
         
         
       }
@@ -56,7 +57,7 @@
         bottom: 0;
         content: "";
         display: block;
-        height: 2px;
+        height: 1px;
         left: 50%;
         position: absolute;
         background: #fff;
@@ -67,24 +68,20 @@
         width: 100%; 
         left: 0; 
       }
-      @media (min-width: 768px) {
-        img{
-            width:50%;
-            height: 50%;
-            
-        }
-      }
+      
     @media (min-width: 768px) {
-        img{
-            width:100%;
-            height: 20%;
-            
-        }
+        
         ul{
             display: contents;
         }
         .hamburguer-logo{
             display: none;
+        }
+    }
+    
+    @media (min-width: 1150px) {
+        img{
+          margin-left: 200%;
         }
     }
     @media (min-width: 1440px) {
@@ -101,15 +98,26 @@
         margin-left: 4%;
       }
     }
+    @media (min-width: 1200px){
+      .nav-bar li a{
+        margin: 0 60px;
+      }
+    }
     @media (min-width: 1400px){
       .nav-bar-desktop{
         display: inline-flex;
+      }
+      .nav-bar-desktop {
+        li a{
+          margin: 0 70px;
+        }
+        
       }
     }
     
 }
 @media (min-width: 1400px){
   .nav-bar li a{
-    font-size: 20pt;
+    
   }
 }

@@ -5,11 +5,20 @@
 .services{
     color: #fff;
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 8pt;
-    padding: 5%;
+    text-align: left;
     
     .header{
+        h1{
+            display: flow-root;
+                color: #fff;
+                /* margin-left: 20%; */
+                border: 1px #fff solid;
+                padding: 3%;
+                border-left: 0;
+                border-right: 0;
+        }
         hr{
             width: 80%;
         border: none;
@@ -31,7 +40,7 @@
     .cards-services{
         grid-column: 2 / span 12;
         display: grid;
-        grid-template-columns: repeat(12, minmax(auto, 60px));
+        grid-template-columns: repeat(12, minmax(auto, 100px));
         
         justify-content: center;
     }
@@ -39,12 +48,58 @@
         grid-column-end: span 4;
         display: flex;
         padding: 15px;
-        
+        max-height: 230px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
     }
-    .card-content h1{
-        font-size: 15pt;
+    .card * {
+        transition: 0.3s ease all;
+      }
+    .card img{
+        object-fit: cover;
+        display: block;
+    }
+    .card-content{
+        height: 100px;
+        position: relative;
+    }
+     h3{
+        font-size: 12pt;
+        font-family: 'Open Sans';
+        //transform: translate(0px,10px);
+    }
+    p{
+        font-size: 12pt;
+        font-family: 'Open Sans';
+        padding: 5%;
+    }
+    .card:hover{
+        
+        cursor: pointer;
+    }
+    .card-content:hover{
+        object-fit: cover;
+        
+    }
+    .card:hover .card-content{
+        align-items: center;
+        h3{
+            margin-top: 80%;
+        }
+        // #voices{
+        //     margin-top: 110%;
+        // }
+        p{
+            margin-top: -15%;
+        }
+        height: 500px;
+        
+        transform: translate(0px, -200px);
+	-webkit-transform: translate(0px, -200px);
+	-moz-transform: translate(0px, -200px);
+	-o-transform: translate(0px, -200px);
+	-ms-transform: translate(0px, -200px);
+	opacity: 1;
     }
     .image-container {
         width: 100%;
@@ -69,11 +124,25 @@
         color: black;
         background-color: rgba(255,255,255,0.9);
         width: 100%;
+        text-align: center;
+        transform: translate(0px, 0px);
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+      }
+      .card-text{
+        transform: translateY(30px);
       }
       
       @media only screen and (min-width: 1024px){
         .cards-services{
-            display: none;
+            
         }
         .swiper {
             width: 100%;
@@ -113,8 +182,13 @@
         }
         
       }
-    @media only screen and (max-width: 1024px) {
-        
+    @media only screen and (max-width: 768px) {
+        .card:hover .card-content{
+            align-items: center;
+            h3{
+                margin-top: 60%;
+            }
+        }
         .cards {
           grid-column: 2 / span 6;
           grid-template-columns: repeat(6, 1fr);
@@ -146,8 +220,161 @@
     }
 }
 
-@media(max-height: 400px) {
+@media only screen and (max-width: 1150px) {
     .services{
+        .card:hover .card-content #voices{
+            
+                margin-top: 100%;
+            
+        }
+    }
+}
+@media only screen and (max-width: 950px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+              margin-top: 110%;  
+            }
+            #voices{
+                margin-top: 120%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+              margin-top: 120%;  
+            }
+            #voices{
+                margin-top: 140%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+              margin-top: 90%;  
+            }
+            #voices{
+                margin-top: 90%;
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .services{
+        .card:hover .card-content {
+            height: 550px;
+            h3{
+              margin-top: 170%;  
+            }
+            #voices{
+                margin-top: 160%;
+            }
+            p{
+            margin-top: -20%;
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+              margin-top: 190%;  
+            }
+            #voices{
+                margin-top: 190%;
+            }
+            p{
+                margin-top: -30%;
+                font-size: 9pt;
+                }
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+                
+              margin-top: 210%;  
+            }
+            p{
+                font-size: 9pt;
+            }
+            #voices{
+                margin-top: 210%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+                
+              margin-top: 220%;  
+            }
+            
+            #voices{
+                margin-top: 220%;
+            }
+        }
+        .card .card-content{
+            h3{
+                
+                margin-top: 20%;  
+              }
+        }
+    }
+}
+@media(max-width: 360px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+                
+              margin-top: 240%;  
+            }
+            
+            #voices{
+                margin-top: 240%;
+            }
+        }
+    }
+}
+@media(max-width: 330px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+                
+              margin-top: 260%;  
+            }
+            
+            #voices{
+                margin-top: 260%;
+            }
+        }
+    }
+}
+@media(max-width: 315px) {
+    .services{
+        .card:hover .card-content {
+            h3{
+                
+              margin-top: 300%;  
+            }
+            
+            #voices{
+                margin-top: 300%;
+            }
+        }
     }
 }
 @media(max-height: 500px) {
