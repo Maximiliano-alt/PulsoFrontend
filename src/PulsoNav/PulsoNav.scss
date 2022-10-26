@@ -1,4 +1,5 @@
 .nav-bar{
+    position: initial;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -7,7 +8,7 @@
     background-color: transparent;
     display: flex;
     height: 132px;
-    position: fixed;
+    
     top: 0;
     left: 0;
     right: 0;
