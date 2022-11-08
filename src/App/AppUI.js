@@ -1,10 +1,10 @@
 import React from "react";
-import {Carousel} from "../Carousel";
 import { Menu } from "../Menu";
 import { Modal } from "../Modal";
 import { PulsoContext } from "../PulsoContext";
 import {PulsoNav} from "../PulsoNav/index"
-import { VideoCarousel } from "../VideoCarousel/VideoCarousel";
+import { Carousel } from "../Carousel/index";
+import {Player} from "../VideoCarousel/Player"
 import { About } from "../About";
 import './AppUI.scss'
 import { PulsoServices } from "../PulsoServices";
