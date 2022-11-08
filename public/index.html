@@ -54,4 +54,51 @@ $(document).ready(function(){
     <div id="root"  style="display: flex;flex-direction: column;"></div>
     
   </body>
+  <script>
+    $(document).ready(function () {
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  //$(".video").each(function () {
+  //re add to stop all videos auto playing at start
+  // $(".video").trigger("pause");
+  // });
+  $(".video").on("play", function () {
+    swiper.autoplay.stop();
+  });
+
+  $(".video").on("ended, pause", function () {
+    swiper.autoplay.start();
+  });
+  swiper.on("slideChange", function() {
+    const slide = swiper.slides[swiper.activeIndex]
+    var currentVideo = ($(slide).find('video'));
+    console.log(currentVideo);
+    if(currentVideo.length) {
+        var isPaused = currentVideo[0].paused && currentVideo[0].ended;
+    console.log(isPaused);
+    if(!isPaused) {
+      currentVideo.trigger('play');
+    } else {
+      currentVideo.trigger('pause');
+    }
+    }
+    
+  })
+});
+  </script>
 </html>

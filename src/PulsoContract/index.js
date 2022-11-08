@@ -1,7 +1,10 @@
 import React,{Component, useState} from 'react'
 import  './PulsoContract.scss'
-import emailjs from 'emailjs-com'
+import logo from '../assets/LOGOPULSO.png';
 import axios from "axios"
+import Swal from 'sweetalert2'
+import linkedin from '../assets/linkedin.svg'
+import instagram from '../assets/instagram.svg'
 // import Swal from 'sweetalert2'
 // import withReactContent from 'sweetalert2-react-content'
 //impor
@@ -40,6 +43,7 @@ class PulsoContract extends Component{
     constructor(){
         super();
         this.sendMail = this.sendMail.bind(this);
+        
     }
     
     async sendMail(e){
@@ -48,6 +52,19 @@ class PulsoContract extends Component{
         const form = await axios.post("/api/form",{
             name, mail, phone, enterprice,city,country,service,message
         })
+            try{
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Se ha enviado el mensaje',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+            }
+            catch(err){
+                Swal.fire({icon: 'warning',title: 'Oops...',text: 'Ocurrió un problema'});
+            }
+        
+        
     }
     render(){
         return (
@@ -55,7 +72,7 @@ class PulsoContract extends Component{
                     <div id='contract'></div>
                     <h1>SOLICITA TU COTIZACIÓN</h1>
                         
-                    <h2>Contactanos</h2>
+                    <h2>Contáctanos</h2>
                     <hr size='10px' color="white" />
                    
                     <form onSubmit={this.sendMail}>
@@ -84,6 +101,41 @@ class PulsoContract extends Component{
                         </div>
                         <button type="submit" class='button'  >Enviar</button>
                     </form>
+
+                    <div className='footer'>
+                        <div className='nav'>
+                            <a href="#Home"><h1>Inicio</h1></a>
+                            <a href="#about"><h1>Sobre nosotros</h1></a>
+                            <a href="#services"><h1>Servicios</h1></a>
+                           <a href="#works"> <h1>Trabajos realizados</h1></a>
+                           <a href="#contract"> <h1>Contratar</h1></a>
+                        </div>
+                        <img src={logo} className="logo"/>
+                        <div className='container-bottom'>
+                            <div class="social-media">               
+                                <a href="" ><img class="social" src={linkedin} alt=""/></a>
+                                <a href=""><img class="social" src={instagram} alt=""/></a> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className='footer-mobile'>
+                        <img src={logo} className="logo"/>
+                        <div className='nav'>
+                            <a href="#Home"><h1>Inicio</h1></a>
+                            <a href="#about"><h1>Sobre nosotros</h1></a>
+                            <a href="#services"><h1>Servicios</h1></a>
+                           <a id='work' href="#works"> <h1>Trabajos realizados</h1></a>
+                           <a id='work' href="#contract"> <h1>Contratar</h1></a>
+                        </div>
+                        <div class="social-media-mobile">               
+                            <div className='social-mobile'>
+                            <a href="" ><img class="social" src={linkedin} alt=""/></a>
+                            <a href=""><img class="social" src={instagram} alt=""/></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <h1 className='copy'>{(new Date().getFullYear())} | Copyright PulsoMusic - Derechos reservados </h1>
                 </div>
               )
     }

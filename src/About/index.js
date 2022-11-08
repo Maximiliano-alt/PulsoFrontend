@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import estudio from '../assets/estudio.png'
+import estudio from '../assets/FOTOSOBRENOSOTROS.jpg'
 import CHILEBLANCO from '../assets/CHILE BLANCO.png'
 import MUSICA from '../assets/MUSICAA.png'
 import REDE from '../assets/REDE.png'
@@ -26,14 +26,10 @@ const About = () => {
 
         </div>
         <img className='img-phone' src={estudio}/>
-        <div className='flex-about'>
-            <img className='icon-about' src={CHILEBLANCO}/>
-            <hr className='hr'/>
-            <img className='icon-about' src={MUSICA}/>
-            <hr className='hr'/>
-            <img className='icon-about' src={REDE}/>
+        <div className='container_p'>
+          <p>Somos un estudio con base en Santiago de Chile. Producimos música y sonido que emociona y permanece en la memoria. Trabajamos con las más importantes Agencias de Publicidad, Productoras de Cine, TV, Internet y otros medios, tanto de Chile como el extranjero.</p>
+
         </div>
-        <p>Somos un estudio con base en Santiago de Chile.<br /> Producimos música y sonido que emociona y permanece en la memoria. <br /> Trabajamos con las más importantes Agencias de Publicidad Productoras de Cine, TV, internet y otros medios, tanto de Chile como el extranjero.</p>
     </div>
   )
 }

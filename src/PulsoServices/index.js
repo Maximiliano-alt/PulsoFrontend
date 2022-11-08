@@ -161,7 +161,7 @@ const PulsoServices = () => {
         <div className='card'>
             <div className='image-container'>
                 <div className='card-content'>
-                    <h3 id='voices' className='card-title'>Voces y Locucíón en Off</h3>
+                    <h3 id='voices' className='card-title'>Voces y Locución en Off</h3>
                         <p className='card-text'>Tenemos las mejores voces en español e inglés.</p>
                 </div>
             <img src={voc}/>

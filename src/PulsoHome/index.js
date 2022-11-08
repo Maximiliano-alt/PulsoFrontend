@@ -3,7 +3,7 @@ import './PulsoHome.scss'
 import gif from '../assets/gif2_pulso.gif';
 import Logo from "../assets/pulsoFake.png"
 import pulsoHome from "../assets/Logocompletopágina.png"
-import pulsoMobile from "../assets/Logocompletopágina.png"
+import pulsoMobile from "../assets/Sonidomobile.png"
 const PulsoHome = () => {
   return (
     <div className='Home'>

@@ -117,8 +117,9 @@
     }
     
 }
-@media (min-width: 1400px){
-  .nav-bar li a{
-    
+@media (min-width: 850px) {
+        
+  .nav-bar{
+    justify-content: center;
   }
 }
